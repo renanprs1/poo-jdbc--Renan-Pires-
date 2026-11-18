@@ -1,0 +1,14 @@
+CREATE TABLE categoria_quarto (
+id SERIAL PRIMARY KEY,
+nome VARCHAR(80) NOT NULL,
+capacidade_pessoas INT NOT NULL, preco_base NUMERIC(10,2) NOT NULL
+);
+
+CREATE TABLE quarto (
+id SERIAL PRIMARY KEY,
+numero INT UNIQUE NOT NULL,
+andar INT NOT NULL,
+status VARCHAR(30) NOT NULL DEFAULT 'DISPONIVEL',
+categoria_id INT NOT NULL REFERENCES categoria_quarto(id) ON DELETE
+RESTRICT
+);
