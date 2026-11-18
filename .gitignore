@@ -1,0 +1,65 @@
+# ============================================
+# .gitignore - Projeto Java + Maven + Eclipse
+# ============================================
+
+# --- Arquivos compilados ---
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+target/
+bin/
+out/
+build/
+
+# --- IDEs ---
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+*.launch
+.factorypath
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+
+# --- Logs e temporários ---
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# --- Sistema operacional ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Maven ---
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# --- Variáveis de ambiente / credenciais ---
+.env
+*.properties.local
+application-local.properties
+
+# --- Banco de dados local ---
+*.sqlite
+*.db
